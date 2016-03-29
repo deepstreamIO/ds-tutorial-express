@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Example Client</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- libraries -->
+	<script type="text/javascript" src="https://rawgit.com/hoxton-one/deepstream.io-client-js/master/dist/deepstream.min.js"></script>
+</head>
+
+<body>
+	<script>
+		var ds = deepstream( 'localhost:6020', {
+			path: '/deepstream'
+		} );
+		ds.login( {}, function( success, errorEvent, errorMessage ) {
+			console.log( 'Logged in to deepstream' );
+		});
+	</script>
+</body>
+</html>
