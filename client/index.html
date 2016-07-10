@@ -11,9 +11,7 @@
 
 <body>
 	<script>
-		var ds = deepstream( 'localhost:6020', {
-			path: '/deepstream'
-		} );
+		var ds = deepstream( 'localhost:6020' );
 		ds.login( {}, function( success, errorEvent, errorMessage ) {
 			console.log( 'Logged in to deepstream' );
 		});

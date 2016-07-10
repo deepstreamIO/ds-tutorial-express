@@ -10,7 +10,6 @@ app.get('/hello', function ( req, res ) {
   res.send( 'Hello to you too!' );
 })
 
-deepstream.set( 'urlPath', '/deepstream' );
 deepstream.set( 'httpServer', server );
 deepstream.start();
 
